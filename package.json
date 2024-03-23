@@ -1,0 +1,28 @@
+{
+  "name": "2ch-console",
+  "version": "0.0.1",
+  "description": "Console client for 2ch",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "dev": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vertically-challenged/2ch-console.git"
+  },
+  "keywords": [
+    "2ch"
+  ],
+  "author": "Pavel Poeoshin <pavel.poroshin.developer@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vertically-challenged/2ch-console/issues"
+  },
+  "homepage": "https://github.com/vertically-challenged/2ch-console#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  }
+}

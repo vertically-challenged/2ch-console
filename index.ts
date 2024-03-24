@@ -1,8 +1,8 @@
-import readline from 'readline'
-import Controller from './src/controller'
-import functionList from './src/functionList';
+import { createInterface } from 'readline'
+import Controller from './src/controller.ts'
+import functionList from './src/functionList.ts';
 
-const readlineInterface = readline.createInterface({
+const readlineInterface = createInterface({
     input: process.stdin,
     output: process.stdout,
     prompt: '> ', 

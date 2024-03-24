@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "esnext.asynciterable"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "composite":true,
+    "emitDeclarationOnly" :true,
+    "allowImportingTsExtensions": true
+  },
+  "ts-node": {
+    "esm": true, 
+  },
+  "include": ["**/*.ts", "src/**/*.json", ".env"],
+  "exclude": ["node_modules", "src/http", "src/logs"]
+}

@@ -1,4 +1,4 @@
-import boardsQuery from "./boards";
+import boardsQuery from "./boards.ts";
 
 const api = {
   boards: boardsQuery

@@ -2,10 +2,11 @@
   "name": "2ch-console",
   "version": "0.0.1",
   "description": "Console client for 2ch",
+  "type": "module",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node index.ts",
-    "dev": "nodemon index.ts"
+    "start": "node --no-warnings --experimental-loader ts-node/esm index.ts ",
+    "dev": "node --loader nodemon/esm index.ts"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,16 @@
   },
   "homepage": "https://github.com/vertically-challenged/2ch-console#readme",
   "dependencies": {
+    "@types/got": "^9.6.12",
     "axios": "^1.6.8",
+    "got": "^14.2.1",
+    "he": "^1.2.0",
     "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2"
+    "terminal-image": "^2.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/he": "^1.2.3"
   }
 }

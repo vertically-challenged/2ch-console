@@ -1,4 +1,4 @@
-import instance from "./axios"
+import instance from "./axios.ts"
 
 export interface RecordBoard {
   category: string,
@@ -9,6 +9,12 @@ export interface RecordBoard {
 const boardsQuery = {
   async getBoards () {
     return instance.get('/api/mobile/v2/boards')
+  },
+  async getContent (context: string) {
+    if  (context.split('/').length === 1) {
+      return instance.get(`/${context}/catalog.json`)
+    }
+    return instance.get(`/api/mobile/v2/info/${context}`)
   },
 }
 

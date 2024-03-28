@@ -2,6 +2,7 @@ import { createInterface } from 'readline'
 import Controller from './src/controller.ts'
 import functionList from './src/functionList.ts';
 
+
 const readlineInterface = createInterface({
     input: process.stdin,
     output: process.stdout,

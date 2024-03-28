@@ -5,16 +5,17 @@
     "lib": ["ESNext", "esnext.asynciterable"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "moduleResolution": "Node",
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "composite":true,
     "emitDeclarationOnly" :true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "jsx": "react",
   },
   "ts-node": {
     "esm": true, 
   },
-  "include": ["**/*.ts", "src/**/*.json", ".env"],
+  "include": ["**/*.ts", "**/*.tsx", "src/**/*.json", ".env", "src/controller.ts"],
   "exclude": ["node_modules", "src/http", "src/logs"]
 }

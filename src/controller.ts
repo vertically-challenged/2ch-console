@@ -1,4 +1,10 @@
 import { FunctionList } from "./functionList.ts"
+import display from "./views/display.tsx"
+
+interface DataForDisplay {
+  templateName: string 
+  content: any
+}
 
 class Controller {
   public functionsList: FunctionList = {}
@@ -7,9 +13,8 @@ class Controller {
     this.functionsList = functionsList
   }
 
-  display(content: any) {
-    content.displayMethod(content)
-    console.log('\n')
+  display(data: any) {
+    display(data.templateName, data.content)
   }
 
   async parse(message: string) {
@@ -21,11 +26,6 @@ class Controller {
       return
     }
     if (response) this.display(response)
-    else this.display({
-      displayMethod: (): void => {
-        console.log(`\nДоска или тред "${this.context}" не существует!`)
-      }
-    })
   }
 }
 

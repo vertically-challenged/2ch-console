@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "start": "node --no-warnings --experimental-loader ts-node/esm index.ts ",
+    "start": "node  --experimental-loader ts-node/esm index.ts ",
     "dev": "node --loader nodemon/esm index.ts"
   },
   "repository": {
@@ -24,9 +24,14 @@
   "dependencies": {
     "@types/got": "^9.6.12",
     "axios": "^1.6.8",
+    "ffmpeg": "^0.0.4",
     "got": "^14.2.1",
     "he": "^1.2.0",
+    "image-to-ascii": "^3.2.0",
+    "ink": "^4.4.1",
     "nodemon": "^3.1.0",
+    "puppeteer-lottie": "^1.1.2",
+    "react": "^18.2.0",
     "terminal-image": "^2.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
